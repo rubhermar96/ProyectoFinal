@@ -1,0 +1,61 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.text-align-justify{
+    text-align: justify;
+}
+.flex-column-center{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.margin-left-revert{
+    margin-left: revert!important;
+}
+/*NAV
+--------------------------------
+ */
+.brand-logo{
+    margin-left: 0.625rem;
+}
+
+/*Header
+---------------------------------
+ */
+.site-header{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.625rem;
+}
+.icono-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.50rem;
+}
+.btn, .btn-large, .btn-small, .btn-flat{
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+}
+/* Footer
+------------------------------------
+ */
+.bi-github{
+    font-size:2rem;
+}
+.margin-right-2rem{
+    margin-right:2rem;
+}
+/*Inicio Portal
+-------------------------------------
+ */
+.descripcion-portal{
+    width: 80%;
+    margin: auto!important;
+}

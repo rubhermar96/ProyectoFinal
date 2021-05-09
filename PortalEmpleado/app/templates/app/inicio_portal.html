@@ -1,0 +1,38 @@
+{% extends 'app/base.html' %}
+
+{% block navlinks %}
+    <li><a href="{% url 'login_usuario' %}" class="waves-effect waves-light btn-small blue darken-2" title="Entrar"><i class="material-icons left">login</i>Entrar</a></li>
+    <li><a href="{% url 'registro_usuario' %}" class="waves-effect waves-light btn-small amber darken-4" title="Registrarse"><i class="material-icons left">add</i>Registrarse</a></li>
+{% endblock %}
+{% block navlinks_2 %}
+    <li><a href="{% url 'login_usuario' %}"><i class="material-icons right">login</i>Entrar</a></li>
+    <li><a href="{% url 'registro_usuario' %}"><i class="material-icons right">add</i>Registrarse</a></li>
+{% endblock %}
+
+{% block content %}
+    <header>
+        <div class="site-header container row valign-wrapper center-align">
+            <div class="icono-header">
+                <lord-icon src="https://cdn.lordicon.com/gqzfzudq.json" trigger="loop" delay="500" colors="primary:#121331,secondary:#3080e8" scale="65" style="width:100px;height:100px"></lord-icon>
+            </div>
+            <h1 class="valign-wrapper center-align">¡Bienvenido al Portal de Empleo!</h1>
+        </div>
+    </header>
+    <main class="container">
+        <div class="row flex-column-center">
+            <div class="col s10 margin-left-revert">
+                <div class="card blue lighten-5 center-align">
+                    <div class="card-content black-text">
+                        <h4>En este portal podrás explorar todas nuestras ofertas de empleo disponibles</h4>
+                        <p class="text-align-justify descripcion-portal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h4>¡No esperes más e Inicia Sesión o Registrate si todavía no eres usuario!</h4>
+                    </div>
+                    <div class="card-action">
+                        <a href="{% url 'login_usuario' %}" class="waves-effect waves-light btn-large blue darken-2">Iniciar Sesión</a>
+                        <a href="{% url 'registro_usuario' %}" class="waves-effect waves-light btn-large amber darken-4">Registrarse</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
